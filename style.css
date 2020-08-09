@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position:relative;
+}
+/* NEW CSS */
+
+
+
+.initialAlertModal{
+    width:400px;
+    height:250px;
+    border:1px solid black;
+    background:linear-gradient(to right,rgb(207, 207, 63),rgb(202, 202, 45));
+    text-align:center;
+    left:25%;
+    top:-1500px;
+}
+
+.initialAlertModal > h3{
+    height:20%;
+}
+
+.alertfirstnameinput, .alertlastnameinput{
+    height:25px;
+    width:300px;
+    margin-bottom:10px;
+}
+
+.alertdobinput{
+    height:25px;
+}
+
+.alertModalBody{
+    height:80%;
+    width:100%;
+}
+
+.alert_modal_btn{
+    top:-30px;
+    width:100px;
+    background:black;
+    color:white;
+    text-transform:uppercase;
+}
+
+.gendersmokerrow{
+    height:20%;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+    z-index:5;
+}
+
+.alertDOBRow{
+    display:flex;
+    align-items:center;
+    height:50%;
+    justify-content: space-evenly;
+    top:-50px;
+}
+
+.alertDOBDiv{
+    height:100%;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+}
+
+
+/* NEW CSS ENDS */
+
+.familycard{
+    text-align:center;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    background:linear-gradient(to right,rgb(199, 182, 182),rgb(187, 176, 176));
+    font-family: 'Montserrat', sans-serif;
+    font-style:strong;
+}
+
+.flex-header{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.button-flex{
+    display:flex;
+}
+
+.addbtn{
+    width:70px;
+    height:35px;
+    font-size:12px;
+    margin-left:10px;
+    cursor:pointer;
+    transition:1s ease;
+    background:linear-gradient(to right,rgb(207, 207, 63),rgb(202, 202, 45))
+}
+
+.addbtn:hover{
+    opacity:.7
+}
+
+.row{
+    width:100%;
+    height:400px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction:column;
+}
+
+.third{
+ 
+    overflow:auto;
+}
+
+.card-header > h1{
+    text-decoration:underline;
+    text-transform:uppercase;
+}
+
+
+.flex-input{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.double{
+    height:75px;
+}
+
+.lower{
+    margin-top:10px;
+}
+
+
+.inputfield{
+    width:200px;
+    height:25px;
+    background:lightgray;
+    margin-left:10px;
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding-right:5px;
+}
+
+
+
+.options-row{
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+
+
+
+.greenbox{
+    height:150px;
+    width:225px;
+    background:green;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.greenbox > div{
+    text-align:center;
+}
+
+.planinput{
+    height:40px;
+    margin-bottom:10px;
+    font-size:15px;
+    outline:none;
+    background:lightgray;
+    text-align:center;
+}
+
+.one{
+    left:10px;
+}
+
+
+.addMemberBtn{
+    width:70px;
+    height:45px;
+    background:green;
+    font-size:12px;
+}
+
+.addmembermodal{
+    height:350px;
+    width:350px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    flex-direction:column;
+    align-items:center;
+    margin:0 auto;
+    top:-1200px;
+    left:800px;
+    transition:1s ease;
+    outline:1px solid black;
+    background:linear-gradient(to right,rgb(207, 207, 63),rgb(202, 202, 45))
+}
+
+.selectbox{
+    width:100%;
+    height:20px;
+    font-size:15px;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+
+.showmembermodal{
+    left:0px;
+}

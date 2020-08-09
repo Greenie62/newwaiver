@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Insurance Plans</title>
+</head>
+<body>
+    <div class="familycard">
+        <h1 id="clientDOM"></h1>
+        <h2 id="membersDOM"></h2>
+    </div>
+    <div class="row">
+        <div class="card-header">
+           <div class='flex-header'>
+               <h1>Accidental Hospitalization</h1>
+                <div class='button-flex'>
+                   <button class='addbtn addSpouseBtn'>Add Spouse</button>
+                   <button class='addbtn addChildBtn'>Add Child</button>
+               </div> 
+               </div>
+        </div>
+        <div class="card-body">
+            <div class="flex-input">
+               <label for='ervisit'> <h2>ER/Urgent Care Visit:</h2></label>
+               <div class='inputfield ervisit'></div>
+            </div>
+            <div class="flex-input double">
+               
+                <label for='overnight'> <h2>Overnight Confinement:</h2></label>
+                <div class='inputfield overnight'></div>
+                <label for="annual"><h2>Annual Value:</h2></label>
+                <div class='inputfield annual'></div>
+             </div>
+             <div class="flex-input">
+                <label for='intensive'> <h2>Intensive Care Visit:</h2></label>
+                <div class='inputfield intensive'></div>First 14 Days
+             </div>
+             <div class="flex-input lower">
+                <label for='disability'> <h2>Disability Pay Due to Accident:</h2></label>
+                <div class='inputfield disability'>$400</div>/month
+             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-header">
+            <h1>Accidental Death Benefit</h1>
+        </div>
+        <div class="flex-input">
+            <label for="anyaccident"><h2>Any Accident:</h2></label>
+            <div class='inputfield anyaccident'></div>
+        </div>
+        <div class="flex-input">
+                <label for="anyaccident"><h2>Auto Accident:</h2></label>
+                <div class='inputfield autoaccident'></div>
+            </div>
+            <div class="flex-input">
+                    <label for="anyaccident"><h2>Common Carrier:</h2></label>
+                    <div class='inputfield commoncarrier'></div>
+                </div>
+    </div>
+    <div class="row third">
+        <div class="card-header">
+            <h1>Health related/natural cause benefit</h1>
+        </div>
+        <div class="flex-input">
+            <label for="additionalcoverage">
+                <h2>Additional Coverage</h2> 
+           
+                <h3>-Cancer Plan</h3>
+                <h3>-Critical Illness</h3>
+            </label>
+            <div class='inputfield additionalcoverage'></div>
+        </div>
+
+        <div class='flex-input'>
+            <label for="spousecoverage"><h2 class='spouseDOM'>Spouse Coverage:</h2></label>
+            <div class='inputfield spousecoverage'></div>
+        </div>
+        <div class='flex-input'>
+                <label for="childcoverage"><h2 class='childDOM'>Child(ren) Coverage:</h2></label>
+                <div class='inputfield childcoverage'></div>
+                <div class='inputfield childcoveragetwo'></div>
+            </div>
+
+        <div class='flex-input'>
+            <label for="wholelife">
+                <h2>Whole Life:</h2>
+              
+                <h3>-Inc. Disability/Layoff</h3>
+                <h3>Waiver Premiums</h3>
+            </label>
+            <div class='inputfield planone'></div>
+            <div class='inputfield plantwo'></div>
+        </div>
+    </div>
+
+    <div class="options-row">
+        <div class="greenbox planoneBox">
+            <label for="optiononemonth">Option 1:</label>
+           <div> <input type='text' class='planinput one' id='optiononemonth' name='optiononemonth' placeholder="enter amount.." autoComplete='off'> //Month</div>
+          
+          <div>  <input type='text' class='planinput' id='optiononeday' name='optiononeday' placeholder="enter amount.." autoComplete='off'>/Day </div>
+        </div>
+        <div class="greenbox plantwoBox">
+                <label for="optiontwomonth">Option 2:</label>
+               <div><input class='planinput one' type='text' id='optiontwomonth' name='optiontwomonth' placeholder="enter amount.." autoComplete='off'> //Month</div>
+ 
+              <div><input class='planinput' type='text' id='optiontwoday' name='optiontwoday' placeholder="enter amount.." autoComplete='off'>/Day</div>
+        </div>
+        <div class="greenbox new_monthly_calc_box">
+            <label for="monthlycalc">Monthly:</label>
+           <div><h3 id='monthlycalc' name='monthlycalc'></h3></div>
+
+
+    </div>
+    </div>
+
+    <div class="addmembermodal">
+        <h2 id="memberheader"></h2>
+        <div class="card-body">
+            <div>
+            <label for="name">Name:</label>
+            <br/>
+            <input type="text" id='name' name="name" placeholder="name..." autoComplete="off" id="name..."/>
+            </div>
+            <div>
+            <label for="month">Month</label>
+            <select class='selectbox' id='month'></select>
+            </div>
+            <div>
+            <label for="day">Day</label>
+            <select class='selectbox' id='day'></select>
+            </div>
+            <div>
+            <label for="year">Year</label>
+            <select class='selectbox' id='year'></select>
+            </div>
+            <button class='addMemberBtn'>Add Member</button>
+        </div>
+    </div>
+
+
+    <div class='initialAlertModal'>
+        <h3>Mikes Insurance</h3>
+        <div class='alertModalBody'>
+            <label for="alert_firstname">FirstName:</label>
+            <input class='alertfirstnameinput' type="text" name="alert_firstname" id="alert_firstname" placeholder="client name..." autocomplete="off">
+            <br/>
+            <label for="alert_clientname">LastName:</label>
+            <input class='alertlastnameinput' type="text" name="alert_lastname" id="alert_lastname" placeholder="client name..." autocomplete="off">
+            <div class='gendersmokerrow'>
+                <div>
+                <label for="alert_gender">Sex:</label>
+                <select id="alert_gender" name='alert_gender'>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="alert_smoker">Smoker:</label>
+                    <select id="alert_smoker" name='alert_smoker'>
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                    </div>
+            </div>
+            <br/>
+            <div class='alertDOBRow'>
+                <div class="alertDOBDiv">
+                <label for="alert_month">Month</label>
+                <select class='alertdobinput' id="alert_month" name="alert_month"></select>
+                </div>
+                <div class="alertDOBDiv">
+                    <label for="alert_day">Day</label>
+                    <select class='alertdobinput' id="alert_day" name="alert_day"></select>
+                    </div>
+                    <div class="alertDOBDiv">
+                        <label for="alert_year">Year</label>
+                        <select class='alertdobinput' id="alert_year" name="alert_year"></select>
+                        </div>
+            </div>
+        </div>
+        <button class='alert_modal_btn'>Enter</button>
+    </div>
+
+    <script src='script.js'></script>
+    <script src="new.js"></script>
+</body>
+</html>
